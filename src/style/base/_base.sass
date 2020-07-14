@@ -1,0 +1,100 @@
+// *************************************
+//
+//   Base
+//
+// *************************************
+
+html
+  height: 100%
+
+body
+  width: 100%
+  height: 100%
+  margin: 0
+  font-size: 16px
+  min-width: 300px
+  font-family: 'Arial', "Source Sans Pro", Arial, sans-serif, "Microsoft JhengHei", "Microsoft YaHei"
+  background-repeat: repeat
+  background-size: 100%
+  background-attachment: fixed
+
+::selection
+    color: white
+
+*
+  &:focus
+    outline: none
+
+// -------------------------------------
+//   Inline Content
+// -------------------------------------
+
+a
+  text-decoration: none
+  color: inherit
+  cursor: pointer
+  background-color: transparent
+
+input
+  padding: 0
+  outline: 0
+  border: 0
+  &:focus, &:active
+    outline: 0
+  // removing default style x of input for IE11
+  &::-ms-clear
+    display: none
+
+input[disabled]
+  background-color: #e0e0e0
+
+// input.input[readonly="readonly"],
+// input.input[readonly="readonly"]:focus
+
+// input.input[readonly="readonly"]:focus + .label
+
+img
+  max-width: 100%
+  height: auto
+  display: block
+
+// -------------------------------------
+//   Block Content
+// -------------------------------------
+
+button
+  cursor: pointer
+  outline: 0
+  border: 0
+  background-color: transparent
+  box-sizing: border-box
+  padding: 0
+  font-family: inherit
+  color: unset
+  &:focus, &:active
+    outline: 0
+
+ul,
+dl,
+dt,
+dd
+  margin: 0
+  padding: 0
+
+ul
+  list-style-type: none
+
+
+// -------------------------------------
+//   Base style
+// -------------------------------------
+
+[class*='btn-']
+  cursor: pointer
+
+div, span, section, nav
+  box-sizing: border-box
+
+table
+  border-spacing: 0
+  border-collapse: collapse

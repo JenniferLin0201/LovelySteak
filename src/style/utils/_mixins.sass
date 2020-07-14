@@ -1,0 +1,31 @@
+// *************************************
+//
+//  Mixins
+//
+// *************************************
+
+=fs($fz: null, $c: null, $lh: null, $fw: null, $fm: null)
+  font-size: $fz
+  color: $c
+  line-height: $lh
+  font-weight: $fw
+  font-family: $fm
+  @content
+
+=imgBg($w: null, $h: null, $img-url: null)
+  width: $w
+  height: $h
+  background: image-url('#{$img-url}') no-repeat
+
+=size($w: null, $h: null)
+  width: $w
+  height: $h
+  @content
+
+=pos($p: null, $t: null, $r: null, $b: null, $l: null)
+  position: $p
+  top: $t
+  right: $r
+  bottom: $b
+  left: $l
+  @content
