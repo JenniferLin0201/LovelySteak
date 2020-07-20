@@ -1,0 +1,129 @@
+// 卡片
+.card
+    background: #ffffff
+    border-radius: 7px
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .05)
+
+// 卡片資訊
+.card-info
+    padding: 13px 13px 0
+.card-img
+    background: #E0EDFA
+    min-height: 130px
+    width: 100%
+.card-name
+    color: #38405A
+    font-size: 14px
+    font-weight: bold
+    line-height: 16px
+    padding: 15px 0 10px
+    text-align: center
+.card-price
+    color: #D8972C
+    font-size: 18px
+    font-weight: bold
+    line-height: 20px
+    margin: 0 0 10px
+    text-align: center
+
+// 數量
+.card-amount
+    background: #F8F8F8
+    height: 44px
+    text-align: center
+    padding: 6px 8px
+.card-amount-btn,
+.card-amount-input
+    display: inline-block
+    vertical-align: middle
+.card-amount-input
+    background: #ffffff
+    border-radius: 4px
+    border: 1px solid #E0EDFA
+    color: #434C69
+    font-size: 14px
+    height: 30px
+    margin: 0 8px
+    text-align: center
+    transition: .3s ease
+    width: 73px
+    &::placeholder
+        color: #A0A0A0
+    &:focus
+        border-color: #D8972C
+    &:hover
+        border-color: #F8D9A6 
+.card-amount-btn
+    background: #D2DAE2
+    border-radius: 50%
+    border: 1px solid #D2DAE2
+    height: 20px
+    position: relative
+    transition: .3s ease
+    width: 20px
+    &:hover
+        background: #D8972C
+        border-color: #D8972C
+    &.is-disabled
+        border-color: #D2DAE1
+        background: rgba(white, 0)
+        &::after,
+        &::before
+            background: #D2DAE2
+            
+.card-amount-btn--minus
+    &::before
+        background: #FFFFFF
+        border: 1px
+        content: ''
+        height: 2px
+        left: 0
+        right: 0
+        position: absolute
+        margin: auto
+        top: calc(50% - 1px)
+        width: 10px
+.card-amount-btn--plus
+    &::before,
+    &::after
+        background: #FFFFFF
+        border-radius: 1px
+        content: ''
+        height: 2px
+        left: calc(50% - 5px)  
+        position: absolute
+        top: calc(50% - 1px)
+        width: 10px
+    &::after
+        transform: rotate(90deg)  
+
+// 卡片底部按鈕
+.card-btnGroup
+    border-top: 1px solid #E0EDFA
+    display: flex
+.card-btn
+    align-items: center
+    cursor: pointer
+    display: flex
+    font-size: 15px
+    height: 44px
+    justify-content: center
+    line-height: 17px
+    width: 50%
+    transition: .3s ease
+.card-btn--addToCart
+    color: #434C69
+    border-bottom-left-radius: 7px
+    border-right: 1px solid #E0EDFA
+    &:hover
+        background: #434C69
+        color: #ffffff
+.card-btn--buy
+    border-bottom-right-radius: 7px
+    color: #D8972C
+    font-weight: bold
+    &:hover
+        background: #D8972C
+        color: #ffffff
+        
+    
